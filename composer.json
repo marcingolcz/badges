@@ -22,14 +22,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "post-install-cmd": [
-              "php artisan vendor:publish --tag=public --force"
-        ],
-        "post-update-cmd": [
-              "php artisan vendor:publish --tag=public --force",
-              "php artisan asset:publish --bench=golcz/badges"
-        ]
-    }
+    "prefer-stable": true
 }
