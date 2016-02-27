@@ -1,7 +1,6 @@
 <?php
 
 namespace Golcz\Badges;
-use Illuminate\Html\HtmlBuilder;
 use Illuminate\Support\HtmlString;
 
 /**
