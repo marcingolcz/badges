@@ -1,6 +1,7 @@
 <?php
 
 namespace Golcz\Badges;
+use Illuminate\Support\HtmlString;
 
 /**
 * Badge class
@@ -20,7 +21,7 @@ class Badge
         $linkWrapper = $this->linkWrapper($url, $args);
         $field = $this->createField($text, $number);
 
-        return str_replace('{{BADGE}}',$field,$linkWrapper);
+        return $this->toHtmlString(str_replace('{{BADGE}}',$field,$linkWrapper));
     }
 
     /**
@@ -58,7 +59,7 @@ class Badge
         $buttonWrapper = $this->buttonWrapper($text, $type, $args);
         $field = $this->createField($text,$number);
 
-        return str_replace('{{BADGE}}',$field, $buttonWrapper);
+        return $this->toHtmlString(str_replace('{{BADGE}}',$field, $buttonWrapper));
     }
 
 
@@ -145,4 +146,17 @@ class Badge
         }
         return $customArgs;
     }
+
+    /**
+     * Transform the string to an Html serializable object
+     *
+     * @param $html
+     *
+     * @return \Illuminate\Support\HtmlString
+     */
+    protected function toHtmlString($html)
+    {
+        return new HtmlString($html);
+    }
+
 }
