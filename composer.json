@@ -28,7 +28,8 @@
               "php artisan vendor:publish --tag=public --force"
         ],
         "post-update-cmd": [
-              "php artisan vendor:publish --tag=public --force"
+              "php artisan vendor:publish --tag=public --force",
+              "php artisan asset:publish --bench=golcz/badges"
         ]
     }
 }

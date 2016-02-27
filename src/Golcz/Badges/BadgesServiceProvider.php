@@ -23,7 +23,9 @@ class BadgesServiceProvider extends ServiceProvider
 		$this->publishes([
             __DIR__.'/../../../public' => public_path('badges'),
 		], 'public');
+
 		$this->loadViewsFrom(__DIR__ . '/../../resources/views', 'badges');
+
 		if (! $this->app->routesAreCached()) {
 			require __DIR__.'/../../routes.php';
 		}
