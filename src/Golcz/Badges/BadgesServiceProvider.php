@@ -20,7 +20,7 @@ class BadgesServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		$this->package('golcz/badge', 'badges');
+		$this->package('golcz/badges', 'badges');
 
 		require __DIR__.'/../../routes.php';
 	}
