@@ -1,0 +1,29 @@
+{
+    "name": "golcz/badges",
+    "description": "Simple package to generate bootstrap badges.",
+    "authors": [
+        {
+            "name": "Marcin Gólcz",
+            "email": "marcin.golcz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-4": {
+            "Golcz\\Badges\\": "src/Golcz/Badges"
+        }
+    },
+    "minimum-stability": "stable",
+    "scripts": {
+        "post-update-cmd": [
+            "php artisan optimize",
+            "php artisan vendor:publish"
+        ]
+    }
+}
