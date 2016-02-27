@@ -3,6 +3,7 @@
     "description": "Simple package to generate bootstrap badges.",
     "keywords": ["bootstrap","badges","generators", "html"],
     "license": "MIT",
+    "homepage": "https://github.com/marcingolcz/badges",
     "authors": [
         {
             "name": "Marcin Gólcz",
