@@ -1,6 +1,8 @@
 {
     "name": "golcz/badges",
     "description": "Simple package to generate bootstrap badges.",
+    "keywords": ["bootstrap","badges","generators", "html"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Marcin Gólcz",
