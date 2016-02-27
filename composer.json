@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "5.1.*"
+        "illuminate/support": "~5.0"
     },
     "autoload": {
         "classmap": [
@@ -22,11 +22,6 @@
             "Golcz\\Badges\\": "src/Golcz/Badges"
         }
     },
-    "minimum-stability": "stable",
-    "scripts": {
-        "post-update-cmd": [
-            "php artisan optimize",
-            "php artisan vendor:publish"
-        ]
-    }
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
