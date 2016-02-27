@@ -177,7 +177,7 @@
                     <pre><?php echo "{{ Badge::link('#','Messages', 43) }}" ?></pre>
                 </div>
                 <div class="col-md-6">
-                    <pre>{{ Blade::compileString(Badge::link('#','Messages', 43)) }}</pre>
+                    <pre>{{{ Blade::compileString(Badge::link('#','Messages', 43)) }}}</pre>
                 </div>
                 <div class="col-md-2" style="margin-top: 10px">
                     {{ Badge::link('#','Messages', 43) }}
@@ -192,7 +192,7 @@
                         <pre><?php echo "{{ Badge::primary('Messages', 43) }}" ?></pre>
                     </div>
                     <div class="col-md-6">
-                        <pre>{{ Blade::compileString(Badge::primary('Messages', 43)) }}</pre>
+                        <pre>{{{ Blade::compileString(Badge::primary('Messages', 43)) }}}</pre>
                     </div>
                     <div class="col-md-2" style="margin-top: 10px">
                         {{ Badge::primary('Messages', 43) }}
@@ -203,7 +203,7 @@
                         <pre><?php echo "{{ Badge::info('Messages', 43) }}" ?></pre>
                     </div>
                     <div class="col-md-6">
-                        <pre>{{ Blade::compileString(Badge::info('Messages', 43)) }}</pre>
+                        <pre>{{{ Blade::compileString(Badge::info('Messages', 43)) }}}</pre>
                     </div>
                     <div class="col-md-2" style="margin-top: 10px">
                         {{ Badge::info('Messages', 43) }}
@@ -214,7 +214,7 @@
                         <pre><?php echo "{{ Badge::danger('Messages', 43) }}" ?></pre>
                     </div>
                     <div class="col-md-6">
-                        <pre>{{ Blade::compileString(Badge::danger('Messages', 43)) }}</pre>
+                        <pre>{{{ Blade::compileString(Badge::danger('Messages', 43)) }}}</pre>
                     </div>
                     <div class="col-md-2" style="margin-top: 10px">
                         {{ Badge::danger('Messages', 43) }}
@@ -225,7 +225,7 @@
                         <pre><?php echo "{{ Badge::warning('Messages', 43) }}" ?></pre>
                     </div>
                     <div class="col-md-6">
-                        <pre>{{ Blade::compileString(Badge::warning('Messages', 43)) }}</pre>
+                        <pre>{{{ Blade::compileString(Badge::warning('Messages', 43)) }}}</pre>
                     </div>
                     <div class="col-md-2" style="margin-top: 10px">
                         {{ Badge::warning('Messages', 43) }}
@@ -236,7 +236,7 @@
                         <pre><?php echo "{{ Badge::success('Messages', 43) }}" ?></pre>
                     </div>
                     <div class="col-md-6">
-                        <pre>{{ Blade::compileString(Badge::success('Messages', 43)) }}</pre>
+                        <pre>{{{ Blade::compileString(Badge::success('Messages', 43)) }}}</pre>
                     </div>
                     <div class="col-md-2" style="margin-top: 10px">
                         {{ Badge::success('Messages', 43) }}
