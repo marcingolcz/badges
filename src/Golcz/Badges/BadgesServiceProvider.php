@@ -2,7 +2,6 @@
 
 namespace Golcz\Badges;
 
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class BadgesServiceProvider extends ServiceProvider
@@ -21,10 +20,11 @@ class BadgesServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		$this->package('golcz/badges');
-		View::addNamespace('badges', __DIR__.'/../../resources/views');
+		$this->loadViewsFrom(__DIR__ . '/../../resources/views', 'badges');
 
-		require __DIR__.'/../../routes.php';
+		if (! $this->app->routesAreCached()) {
+			require __DIR__.'/../../routes.php';
+		}
 	}
 
 	/**
