@@ -20,11 +20,9 @@ class BadgesServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		$this->loadViewsFrom(__DIR__ . '/../../resources/views', 'badges');
+		$this->package('golcz/badge', 'badges');
 
-		if (! $this->app->routesAreCached()) {
-			require __DIR__.'/../../routes.php';
-		}
+		require __DIR__.'/../../routes.php';
 	}
 
 	/**
